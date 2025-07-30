@@ -89,21 +89,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Reset Button */}
-          {(selectedFile || result || error) && (
-            <div className="flex justify-center mb-8">
-              <button
-                onClick={handleReset}
-                className="flex items-center space-x-3 px-6 py-3 bg-gradient-to-r from-red-500 to-pink-500 text-white font-medium rounded-xl hover:from-red-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap cursor-pointer"
-              >
-                <div className="w-5 h-5 flex items-center justify-center">
-                  <i className="ri-restart-line"></i>
-                </div>
-                <span>Reiniciar Sistema</span>
-              </button>
-            </div>
-          )}
-
           <div className="bg-slate-800/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl p-8 mb-8">
             <div className="mb-8">
               <div className="flex items-center space-x-3 mb-4">
