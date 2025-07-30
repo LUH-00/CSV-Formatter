@@ -514,6 +514,9 @@ video {
 .mt-6{
   margin-top: 1.5rem;
 }
+.mt-16{
+  margin-top: 4rem;
+}
 .flex{
   display: flex;
 }
@@ -872,6 +875,9 @@ video {
 }
 .text-center{
   text-align: center;
+}
+.text-right{
+  text-align: right;
 }
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

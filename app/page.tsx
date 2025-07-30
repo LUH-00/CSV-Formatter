@@ -70,15 +70,22 @@ export default function Home() {
 
       <div className="relative z-10 container mx-auto px-4 py-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl mb-6 shadow-2xl">
-              <i className="ri-file-excel-2-line text-3xl text-white"></i>
+          {/* Header */}
+          <div className="flex items-center justify-between mb-12">
+            <div className="flex items-center space-x-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-xl shadow-lg">
+                <i className="ri-file-excel-2-line text-xl text-white"></i>
+              </div>
+              <h1 className="text-2xl font-bold text-white">CSV Formatter</h1>
             </div>
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-4">
-              CSV Contact Formatter
-            </h1>
+            <div className="text-right">
+              <p className="text-lg font-semibold text-white">Luan Vinicis</p>
+            </div>
+          </div>
+
+          <div className="text-center mb-12">
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Sistema avançado para formatação automática de contatos. Transforme seus dados CSV em listas otimizadas instantaneamente.
+              Transforme seus dados CSV em listas otimizadas instantaneamente.
             </p>
           </div>
 
@@ -222,6 +229,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-16 text-center">
+          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/30 rounded-xl p-6">
+            <p className="text-slate-400 text-sm">
+              © 2025 Luan Vinicius - Todos os direitos reservados
+            </p>
           </div>
         </div>
       </div>
