@@ -136,6 +136,19 @@ export default function Home() {
                 </div>
                 <span className="text-lg">{isProcessing ? 'Processando Dados...' : 'Iniciar Processamento'}</span>
               </button>
+
+              {(selectedFile || result || error) && (
+                <button
+                  onClick={handleReset}
+                  disabled={isProcessing}
+                  className="flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-slate-500 to-slate-600 text-white font-semibold rounded-xl hover:from-slate-600 hover:to-slate-700 disabled:from-slate-600 disabled:to-slate-700 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap cursor-pointer ml-4"
+                >
+                  <div className="w-6 h-6 flex items-center justify-center">
+                    <i className="ri-restart-line text-xl"></i>
+                  </div>
+                  <span className="text-lg">Reiniciar Sistema</span>
+                </button>
+              )}
             </div>
 
             {isProcessing && (
